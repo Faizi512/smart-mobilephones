@@ -1,0 +1,215 @@
+$primary-color: #01c7d1;
+body{
+	font-family: 'Poppins', sans-serif !important;
+}
+.bg-black{
+	background-color: #000;
+}
+.bg-img{
+	background-image: asset-url("mobile-banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 110vh;
+}
+.fs-73{
+	font-size: 68px;
+}
+.ready-img{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	width: 70px;
+	height: auto;
+}
+.btn-orng{
+	background-color: $primary-color !important;
+	color: white !important;
+	border: 3px solid $primary-color !important;
+	&:hover{
+		background-color: transparent !important;
+		color: $primary-color !important;
+		border: 3px solid $primary-color;
+	}
+}
+.bg-orng{
+	background-color: $primary-color !important;
+}
+.bg-order-sec{
+	background-image: asset-url("orderonline-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	min-height: 400px;
+}
+.text-orng{
+	color: $primary-color !important;
+}
+.bg-light-orng{
+	background-color: #e4feff;
+}
+.deal-div{
+	min-height: 500px;
+}
+.apple-logo{
+	width: 29px !important;
+}
+.w-40{
+	width: 40% !important;
+}
+.w-48{
+	width: 48% !important;
+}
+.w-77{
+	width: 77% !important;
+}
+.why-div{
+	min-height: 543px;
+}
+.logo-img{
+	width: 185px;
+}
+input.valid ~ .validate.success {
+  display: inline-block;
+}
+input.valid ~ .validate.error {
+  display: none;
+}
+input.error ~ .validate.error {
+  display: inline-block;
+}
+input.error ~ .validate.success {
+  display: none;
+}
+.validate.error{
+  display: none;
+  color: red !important;
+  position: absolute;
+  float: right;
+  font-size: 25px;
+  right: 18%;
+  margin-top: 9px;
+}
+.parsley-errors-list{
+	padding: 0;
+	color: red;
+	list-style: none;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: left;
+  .parsley-required{
+  	text-align: center;
+  }
+}
+.validate.success{
+  display: none ;
+  color: #28a745 !important;
+  position: absolute !important;
+  float: right !important;
+  font-size: 25px !important;
+  right: 18% !important;
+  margin-top: 9px !important;
+}
+.form-control{
+  height: 45px !important;
+  border: 1px solid #b4b4b4 !important;
+  border-radius: 0px !important;
+}
+label.error {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
+.display-none{
+	display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.bg-img{
+		background-image: asset-url("mobile-banner.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-height: 87vh;
+	}
+	.title{
+		font-size: 20px;
+	}
+	.deal-div{
+		min-height: 453px;
+	}
+	.ready-img{
+		right: 5px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.bg-img{
+		background-image: asset-url("phones/galaxy-s21-series.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		min-height: 550px;
+		max-height: 100%;
+	}
+	.deal-div{
+		min-height: 488px;
+	}
+	.min-h{
+		min-height: 500px;
+	}
+	.ready-img{
+		right: 15px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.ready-img{
+		right: 11px;
+	}
+	.logo-img{
+		width: 130px;
+	}
+	.why-div{
+		min-height: auto;
+	}
+ 	.deal-div{
+		min-height: auto;
+	}
+	.fs-73{
+		font-size: 39px;
+	}
+	.bg-order-sec{
+		min-height: 310px;
+		background-position: center;
+	}
+	.bg-img{
+		background-image: asset-url("phones/galaxy-s21-series.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		min-height: 250px;
+		max-height: 100%;
+	}
+	.validate.error{
+	  right: 5%;
+	}
+
+	.validate.success{
+	  right: 5% !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

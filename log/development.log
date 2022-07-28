@@ -1,0 +1,247 @@
+  [1m[35m (352.2ms)[0m  [1m[35mCREATE DATABASE "db/development" ENCODING = 'unicode'[0m
+  [1m[35m (183.4ms)[0m  [1m[35mCREATE DATABASE "db/test" ENCODING = 'utf8'[0m
+Started GET "/" for ::1 at 2022-07-28 15:24:10 +0500
+  [1m[35m (47.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (45.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20211228123110_create_exit_deliveries.rb
+20220103091507_devise_create_users.rb
+20220110100029_add_columns_in_exit_delivery.rb
+
+
+):
+  
+activerecord (6.1.4.4) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.4) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.4) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.4.4) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.4) lib/action_dispatch/middleware/host_authorization.rb:119:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.4) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2022-07-28 15:24:13 +0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8115692404137957555)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateExitDeliveries (20211228123110)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (45.1ms)[0m  [1m[35mCREATE TABLE "exit_deliveries" ("id" bigserial primary key, "name" character varying, "url" character varying, "percentage" float, "status" character varying, "priority" integer, "cap" integer, "source" text[] DEFAULT '{}', "count" integer DEFAULT 0, "operational" character varying DEFAULT 'active', "functional" character varying, "copy_percentage" float, "total_count" integer, "is_default" boolean DEFAULT FALSE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211228123110"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20220103091507)
+  [1m[36mTRANSACTION (40.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220103091507"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnsInExitDelivery (20220110100029)
+  [1m[36mTRANSACTION (41.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "exit_deliveries" ADD "is_mobile" boolean DEFAULT FALSE[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "exit_deliveries" ADD "source_rule" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220110100029"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-07-28 10:24:14.091220"], ["updated_at", "2022-07-28 10:24:14.091220"]]
+  [1m[36mTRANSACTION (41.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(8115692404137957555)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-07-28 15:24:14 +0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.19
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+warning ../package.json: No license field
+warning ../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 1291.7ms | Allocations: 4367)
+  Rendered layout layouts/application.html.erb (Duration: 1291.9ms | Allocations: 4432)
+Completed 500 Internal Server Error in 1303ms (ActiveRecord: 0.0ms | Allocations: 7159)
+
+
+  
+ActionView::Template::Error (Webpacker can't find home.js in /Users/mac/smartphonedeals-master/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
+    2: 
+    3: 
+    4: <div class="bg-black">
+  
+app/views/pages/index.html.erb:1
+Started GET "/" for ::1 at 2022-07-28 15:25:10 +0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning ../package.json: No license field
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/mac/smartphonedeals-master/node_modules/babel-loader/lib/index.js:59:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.6.0
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 3213.7ms | Allocations: 5216)
+  Rendered layout layouts/application.html.erb (Duration: 3214.1ms | Allocations: 5285)
+Completed 500 Internal Server Error in 3229ms (ActiveRecord: 0.0ms | Allocations: 8202)
+
+
+  
+ActionView::Template::Error (Webpacker can't find home.js in /Users/mac/smartphonedeals-master/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
+    2: 
+    3: 
+    4: <div class="bg-black">
+  
+app/views/pages/index.html.erb:1
+Started GET "/" for ::1 at 2022-07-28 15:25:50 +0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning ../package.json: No license field
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+node:internal/crypto/hash:71
+  this[kHandle] = new _Hash(algorithm, xofLen);
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/mac/smartphonedeals-master/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+    at /Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:236:3
+    at context.callback (/Users/mac/smartphonedeals-master/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/mac/smartphonedeals-master/node_modules/babel-loader/lib/index.js:59:71 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.6.0
+
+  Rendered pages/index.html.erb within layouts/application (Duration: 1660.4ms | Allocations: 5213)
+  Rendered layout layouts/application.html.erb (Duration: 1660.6ms | Allocations: 5282)
+Completed 500 Internal Server Error in 1670ms (ActiveRecord: 0.0ms | Allocations: 8199)
+
+
+  
+ActionView::Template::Error (Webpacker can't find home.js in /Users/mac/smartphonedeals-master/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    1: <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
+    2: 
+    3: 
+    4: <div class="bg-black">
+  
+app/views/pages/index.html.erb:1

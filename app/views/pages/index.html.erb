@@ -1,0 +1,183 @@
+<%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload', defer: true %>
+<!-- Global site tag (gtag.js) - Google Ads: 10956024809 -->
+<script async src=“https://www.googletagmanager.com/gtag/js?id=AW-10956024809”></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(‘js’, new Date());
+  gtag(‘config’, ‘AW-10956024809’);
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-235871887-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-235871887-1');
+</script>
+
+
+<div class="bg-black">
+	<div class="x">
+		<div class="row w-100 mx-0">
+			<div class="col-xl-6 text-center text-xl-start">
+				<div class="py-3 mb-md-5 mt-md-4 bg-black w-100">
+					<%= image_tag('logo-color.png', class: 'logo-img')%>
+				</div>
+				<div class="container">
+					<h1 class="fw-bold text-white fs-73 mt-4 mt-md-0">Finding your favourite mobile deal is simple now</h1>
+					<p class="text-light">It just takes 10 seconds to get the most suitable contracts!</p>
+					<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-4 py-2 w-75 rounded-pill my-md-5 my-3 fw-bold text-white shadow"> Continue </button>
+				</div>
+			</div>
+			<div class="col-xl-6 bg-img">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-light">
+	<div class="container">
+		<div class="align-items-center justify-content-center py-4 py-md-5 row">
+			<h1 class="fw-bold text-orng text-center w-100 mb-4">GET EXCLUSIVE DEALS</h1>
+			<% @deals_list.each do |deal| %>
+				<div class="col-lg-4 col-md-6">
+					<div class="shadow rounded-3 bg-white p-3 text-center mb-4 deal-div position-relative">
+						<%= image_tag('5g-ready1.png', class: 'ready-img')%>
+						<%= image_tag("#{deal[:image]}", class: "#{deal[:img_class]}")%>
+						<h4 class="title mb-0"><%= deal[:title]%></h4>
+						<div class="row w-100 mx-0 pt-3">
+							<p class="text-orng mb-2">All varients available</p>
+						</div>
+						<div class="row w-100 mx-0 justify-content-center mb-2">
+							<% deal[:color].each do |color| %>
+						    <li class="list-unstyled w-auto px-1">
+			            <div class="color border" style="background-color: <%= color %>; width: 22px; height: 22px; border-radius: 50px;">
+			            </div>
+						    </li>
+		          <% end %>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mx-auto">
+								<div class="rounded-3 border bg-white p-2">
+									<h6 class="mb-0 text-center"><%= deal[:data]%></h6>
+									<p class=" mb-0 text-center text-orng">Data | SMS | Calls</p>
+								</div>
+							</div>
+						</div>
+						<div class="row py-2">
+							<div class="col-6 text-center">
+								<div class="rounded-3 shadow-sm border bg-white p-2">
+									<p class="small mb-0">Monthly Plans</p>									
+									<p class="mb-0 small text-orng">12 | 24 | 36</p>
+								</div>
+							</div>
+							<div class="col-6 text-center">
+								<div class="rounded-3 shadow-sm border bg-white p-2">
+									<p class="small mb-0">Upfront</p>
+									<p class="mb-0 small text-orng">£0</p>
+								</div>
+							</div>
+						</div>
+						
+						<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 w-75 rounded-pill mt-2  text-white shadow"> <%= deal[:button]%></button>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+<div class=" bg-orng">
+	<div class="container">
+		<div class="row py-4 py-md-5 flex-sm-row-reverse">
+			<div class="col-md-6 text-center align-self-center">
+				<%= image_tag('iphone-13-p.png', class: 'w-75')%>
+			</div>
+			<div class="col-md-6 align-self-center text-center text-md-start">
+				<h2 class="text-dark fw-bold">iPhone 13</h2>
+				<h1 class="fw-bold fs-73 mt-4">£0/Upfront</h1>
+				<h1 class="mb-4">Unlimited Data, Calls, SMS</h1>
+				<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-dark fs-5 py-2 px-5 rounded-pill mt-5 fw-bold text-white shadow"> Get Deal</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bg-light">
+	<div class="text-div position-absolute w-100 text-center d-none d-md-block">
+		<h1 class="text-center w-100 mt-4"><%= image_tag('apple_logo.svg', class: 'apple-logo mb-2')%> iPhone 13 Pro</h1>
+		<h4 class="fw-light text-center w-100">Get Big Gig Unlimited Data Plans with No Upfront Payments</h4>
+		<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-dark fs-5 py-2 px-5 rounded-pill mt-xl-4 fw-bold text-white shadow"> Buy Now </button>
+	</div>
+	<%= image_tag('iphone13pro.png', class: 'w-100 min-h d-none d-md-block')%>
+	<div class="d-block d-md-none position-absolute w-100 text-center">
+		<h1 class="text-center w-100 mt-3 text-white"><%= image_tag('apple-white.png', class: 'apple-logo mb-2')%> iPhone 13 Pro</h1>
+		<p class="fw-light text-center w-100 text-white">Get Big Gig Unlimited Data Plans with No Upfront Payments</p>
+		<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-light fs-5 py-2 px-5 rounded-pill mt-0 fw-bold text-dark shadow"> Buy Now </button>
+	</div>
+	<%= image_tag('iphone-13promax.png', class: 'w-100 d-block d-md-none')%>
+</div>
+
+<div class="bg-light-orng">
+	<div class="container">
+		<div class="row py-md-5 py-4">
+			<div class="col-md-10 text-center mx-auto">
+				<h1 class="fw-bold fs-73 text-center text-orng">Start saving on newest phone deals today!</h1>
+				<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 px-5 rounded-pill mt-md-5 mt-4 fw-bold text-white shadow"> Start Saving Now!</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-light">
+	<div class="container">
+		<div class="row py-md-5 py-4">
+			<h1 class="fw-bold text-center text-orng mb-4">Why Smart Phone Deals?</h1>
+			<div class="col-md-4 mb-4 mb-md-0 ">
+				<div class="shadow why-div bg-white">
+					<%= image_tag('whyspd1.png', class: 'w-100')%>
+					<div class=" bottom-why p-4 ">
+						<h4 class="fw-bold">The Phones You Want. The Prices You’ll Love.</h4>
+						<p>You shouldn’t have to break the bank to get a new phone. Check out our latest offers.</p>
+						<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 w-100 mt-md-5 mt-4 fw-bold text-white shadow"> Shop Phones</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4 mb-md-0 ">
+				<div class="shadow why-div bg-white">
+					<%= image_tag('whyspd2.png', class: 'w-100')%>
+					<div class=" bottom-why p-4 ">
+						<h4 class="fw-bold mt-1">Keeping You Connected.</h4>
+						<p class="mb-md-4 pb-md-3">We’re always working to give British people what they’re looking for - access to a fast network, for less.</p>
+						<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 w-100 mt-md-5 mt-4 fw-bold text-white shadow"> Learn More</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4 mb-md-0 ">
+				<div class="shadow why-div bg-white">
+					<%= image_tag('whyspd3.png', class: 'w-100')%>
+					<div class=" bottom-why p-4 ">
+						<h4 class="fw-bold">UK's Most Affordable Unlimited Data Plans.</h4>
+						<p>Our Big Gig Unlimited data plans give you all the data you need at the prices you want.</p>
+						<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 w-100 mt-md-5 mt-4 fw-bold text-white shadow"> Shop Plans</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-order-sec">
+	<div class="container">
+		<div class="row py-md-5 py-4">
+			<div class="col-xl-6 col-lg-8 col-md-12 text-center text-md-start">
+				<h1 class="text-white fs-73 fw-bold">BUY ONLINE FROM THE COMFORT OF YOUR HOME.</h1>
+				<button data-bs-toggle="modal" data-bs-target="#formpopup" class="btn open-form btn-orng fs-5 py-2 w-75 rounded-pill mt-5 fw-bold text-white shadow"> Continue</button>
+			</div>
+			<div class="col-md-6">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<%= render 'layouts/footer' %>
+<%= render 'layouts/step-form' %>

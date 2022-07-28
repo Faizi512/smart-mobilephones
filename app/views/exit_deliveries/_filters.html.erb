@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <h6>Status:</h6>
+      <%= link_to "Sold", exit_deliveries_path(status: "sold"), class: "btn btn-info" %>
+      <%= link_to "Unsold", exit_deliveries_path(status: "unsold"), class: "btn btn-info" %>
+    </div>
+    <div class="col-3">
+      <h6>Functional:</h6>
+      <%= link_to "Active", exit_deliveries_path(functional: "active"), class: "btn btn-info" %>
+      <%= link_to "Disable", exit_deliveries_path(functional: "disable"), class: "btn btn-info" %>
+    </div>
+    <div class="col-6 text-right">
+      <h6>All Records:</h6>
+      <a href="/exit_deliveries" class="btn btn-info">Reset</a>
+    </div>
+  </div>
+</div>

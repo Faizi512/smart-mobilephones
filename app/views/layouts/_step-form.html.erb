@@ -1,0 +1,186 @@
+<div class="modal fade" tabindex="-1" id="formpopup">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0">
+      <div class="border-0 fs-3 justify-content-end modal-header pb-0 pe-0">
+        <i id="closebtn" class="far fa-times-circle text-white cursor-p"></i>
+      </div>
+      <div class="modal-body rounded-3">
+        <form id="msform" data-parsley-validate="parsley" data-details="<%= @details %>" method="post">
+          <!-- progressbar -->
+          <ul id="progressbar" class="px-lg-5 px-0">
+            <li class="active" id="personal"><strong>Personal</strong></li>
+            <li id="address"><strong>Address</strong></li>
+            <li id="contact"><strong>Contact</strong></li>
+            <li id="confirm"><strong>Finish</strong></li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <div class="form-card col-md-8 mx-auto">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2 class="fs-title">Personal Information</h2>
+                </div>
+              </div> 
+              <div class="form-group mb-3">
+                <label for="first_name" class="fieldlabels">First Name: *</label> 
+                <input 
+                required
+                data-parsley-required="true"
+                data-parsley-required-message="Please Enter First Name" 
+                data-parsley-pattern-message="First Name Must Be Alphabetic" 
+                data-parsley-pattern="/^[a-zA-Z ]*$/"
+                data-parsley-group="block-0"
+                type="text" 
+                name="first_name" 
+                placeholder="First Name"
+                class="first_name"
+                id="first_name" />
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+              <div class="form-group mb-3">
+                <label for="last_name" class="fieldlabels">Last Name: *</label> 
+                <input 
+                class="last_name"
+                id="last_name" 
+                required
+                data-parsley-required="true"
+                data-parsley-required-message="Please Enter Last Name"
+                data-parsley-group="block-0"
+                data-parsley-pattern-message="Last Name Must Be Alphabetic" 
+                data-parsley-pattern="/^[a-zA-Z ]*$/"
+                type="text" 
+                name="last_name" 
+                placeholder="Last Name" />
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+            </div> 
+            <input type="button" name="next" class="next action-button" value="Next" />
+          </fieldset>
+          <fieldset>
+            <div class="form-card col-md-8 mx-auto">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2 class="fs-title">Your Address</h2>
+                </div>        
+              </div> 
+              <div class="form-group mb-3">
+                <label class="fieldlabels">Postcode: *</label> 
+                <input
+                  name="postcode"
+                  required
+                  data-parsley-required="true"
+                  data-parsley-required-message="Please Enter Postcode"
+                  data-parsley-group="block-1"
+                  data-parsley-validapipostcode
+                  type="text"
+                  id="postcode"
+                  class="postcode"
+                  placeholder="Postcode"/>
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+              <div class="form-group mb-3 display-none property-div">
+                <label class="fieldlabels">Your Property*</label>
+                <input type="hidden" name="towncity" class="towncity" >
+                <input type="hidden" name="street1" class="street1" >
+                <input type="hidden" name="county" class="county" >
+                <input type="hidden" name="houseNumber" class="houseNumber" >
+                <input type="hidden" name="street2" class="street2" >
+                <input type="hidden" name="building" class="building" >
+                <select
+                  id="property"
+                  name="property"
+                  class="property form-control"
+                  data-parsley-required="true"
+                  data-parsley-required-message="Please Select Your property"
+                  data-parsley-group="block-1"
+                  required>
+                </select>
+              </div>
+              <div class="form-group mb-3 display-none address-div">
+                <label class="fieldlabels">Address*</label>
+                <input
+                  name="address"
+                  data-parsley-required-message="Please Enter Your Address"
+                  data-parsley-group="block-1"
+                  type="text"
+                  id="address"
+                  class="address"
+                  placeholder="Address"/>
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+            </div> 
+            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" /> 
+          </fieldset>
+          <fieldset>
+            <div class="form-card col-md-8 mx-auto">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2 class="fs-title">Contact Details</h2>
+                </div>
+              </div>
+              <div class="form-group mb-3">
+                <label class="fieldlabels">Email: *</label> 
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  data-parsley-required="true"
+                  data-parsley-required-message="Please Enter Valid Email Address"
+                  data-parsley-type="email"
+                  data-parsley-type-message="Please Enter Valid Email Address"
+                  data-parsley-group="block-2"
+                  data-parsley-validemail
+                  value=""
+                  class="email"
+                  placeholder="Email Address">
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+              <div class="form-group mb-3">
+                <label class="fieldlabels">Phone: *</label> 
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  required
+                  data-parsley-required="true"
+                  data-parsley-required-message="Please Enter Valid Uk Phone Number"
+                  data-parsley-type="number"
+                  data-parsley-group="block-2"
+                  data-parsley-validphone
+                  class="phone"
+                  placeholder="Mobile Number"/>
+                <i class="validate success fa fa-check-circle"></i>
+                <i class="validate error fa fa-times-circle"></i> 
+              </div>
+            </div> 
+            <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Submit" /> 
+          </fieldset>
+          <fieldset>
+            <div class="form-card col-md-8 mx-auto">
+              
+              <br><br>
+              <h2 class="text-success text-center"><strong>SUCCESS !</strong></h2> <br>
+              <div class="row justify-content-center">
+                <div class="col-3"> <img src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif" class="fit-image"> </div>
+              </div> 
+              <br><br>
+              <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                  <h5 class="purple-text text-center">We have received your request one of our agent will be in contact with you shortly to discuss the mobile deals. </h5>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

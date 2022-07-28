@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="exit-delivery">
+    <p id="notice"><%= notice %></p>
+    <table class="table table-bordered w-100">
+      <tr>
+        <th>Name</th>
+        <td><%= @exit_delivery.name %></td>
+      </tr>
+      <tr>
+        <th>Url</th>
+        <td><%= @exit_delivery.url %></td>
+      </tr>
+      <tr>
+        <th>Percentage</th>
+        <td><%= @exit_delivery.percentage %></td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td><%= @exit_delivery.status %></td>
+      </tr>
+      <tr>
+        <th>Priority</th>
+        <td><%= @exit_delivery.priority %></td>
+      </tr>
+      <tr>
+        <th>Cap</th>
+        <td><%= @exit_delivery.cap %></td>
+      </tr>
+      <tr>
+        <th>Source</th>
+        <td><%= @exit_delivery.source %></td>
+      </tr>
+      <tr>
+        <th>functional</th>
+        <td><%= @exit_delivery.functional %></td>
+      </tr>
+      <tr>
+        <th>Is Mobile</th>
+        <td><%= @exit_delivery.is_mobile %></td>
+      </tr>
+    </table>
+    <div class="text-center">
+      <%= link_to 'Edit', edit_exit_delivery_path(@exit_delivery), :class=>'btn btn-primary px-4 text-white' %> |
+      <%= link_to 'Back', exit_deliveries_path, :class=>'btn btn-primary px-4 text-white' %>
+    </div>
+  </div>
+</div>

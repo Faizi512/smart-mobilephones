@@ -1,0 +1,88 @@
+<%= javascript_pack_tag 'exit_delivery', 'data-turbolinks-track': true, defer: true %>
+<%= form_with(model: exit_delivery, local: true) do |form| %>
+  <div class="row align-items-center justify-content-center">
+    <% if exit_delivery.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(exit_delivery.errors.count, "error") %> prohibited this exit_delivery from being saved:</h2>
+
+        <ul>
+          <% exit_delivery.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :name, :class=> 'control-label' %>
+      <%= form.text_field :name, :required => true, :class=> 'form-control'%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :url, :class=> 'control-label' %>
+      <%= form.text_field :url, :required => true, :class=> 'form-control'%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :percentage, :class=> 'control-label' %>
+      <%= form.number_field :percentage, :step => "0.01", :required => true, :class=> 'form-control' %>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :priority, :class=> 'control-label' %>
+      <%= form.number_field :priority, :required => true, :class=> 'form-control'%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :cap, :class=> 'control-label' %>
+      <%= form.number_field :cap, :class=> 'form-control' %>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :source, :class=> 'control-label' %>
+      <%= form.select :source, options_for_select(exit_delivery.source, exit_delivery.source), {},{:multiple => true, class: 'form-control source'} %>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :source_rule%>
+      <%= form.select :source_rule, ['Is', 'Contains', 'Does_not_contains']%>
+    </div>
+
+
+    <div class="field d-none" >
+      <%= form.label :count, :class=> 'control-label'%>
+      <%= form.number_field :count, :readonly => true, :class=> 'form-control'%>
+    </div>
+
+    <div class="field d-none">
+      <%= form.label :operational, :class=> 'control-label' %>
+      <%= form.text_field :operational, :readonly => true, :class=> 'form-control'%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :functional%>
+      <%= form.select :functional, ['active', 'disable']%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :status%>
+      <%= form.select :status, ['sold','unsold']%>
+    </div>
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :is_mobile %>
+      <%= form.check_box :is_mobile %>
+    </div>
+
+
+    <div class="field form-group col-lg-10">
+      <%= form.label :is_default %>
+      <%= form.check_box :is_default %>
+    </div>
+
+    <div class="actions d-flex justify-content-end col-lg-10 ">
+      <%= form.submit "Save Redirect URL", :class=> "btn btn-primary mr-2"  %>
+      <%= link_to 'Back', exit_deliveries_path, :class=> 'btn btn-danger', data: { turbolinks: false } %>
+    </div>
+  </div>
+<% end %>
