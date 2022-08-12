@@ -33,12 +33,12 @@ class Home extends Common {
         //show the next fieldset
         next_fs.show();
         //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
+        $(current_fs).animate({opacity: 0}, {
           step: function(now) {
           // for making fielset appear animation
             opacity = 1 - now;
 
-            current_fs.css({
+            $(current_fs).css({
               'display': 'none',
               'position': 'relative'
             });
