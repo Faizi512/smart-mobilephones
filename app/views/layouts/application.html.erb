@@ -44,5 +44,72 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FK9MPG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <%= yield %>
+    <script src="https://******/resource/global/js/params_store.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+var tmpQuery = $ || jQuery.noConflict(true);
+(function($) {
+	var state = {
+	},
+	desiredKeys = {
+		utm_source: null,
+		utm_medium: null,
+		utm_campaign: null,
+		utm_content: null,
+		utm_term: null,
+		gclid: null
+	};
+	function getCookieByName(name) {
+		var cookie = " " + document.cookie;
+		var search = " " + name + "=";
+		var setStr = null;
+		var offset = 0;
+		var end = 0;
+		if (cookie.length > 0) {
+			offset = cookie.indexOf(search);
+			if (offset != -1) {
+				offset += search.length;
+				end = cookie.indexOf(";", offset);
+				if (end == -1) {
+					end = cookie.length;
+				}
+				setStr = decodeURIComponent(cookie.substring(offset, end));
+			}
+		}
+		return setStr;
+        };
+        function getTpar() {
+        	var readCookie = getCookieByName('tPar');
+        	var newObj = {};
+	        if(readCookie !== null) {
+	                try {
+	                        newObj = JSON.parse(readCookie);
+	                } catch(e) {
+	                }
+	        }
+	        return newObj;
+        }
+        function updateTpar() {
+        	var tPar = getTpar();
+        	var tPar_str;
+        	$.extend( tPar, state );
+        	tPar_str = JSON.stringify(tPar);
+        	omParamsStore.setItem('tPar', tPar_str, 7200*1000, '/');
+        }
+        function updateState(key, value) {
+        	state[key] = value;
+	        updateTpar();
+	}
+	$(document).ready(function() {
+		var result = omParamsStore.findItemsByKeys(desiredKeys);
+		Object.keys(result).map(function (key) {
+                        var defaultValue = result[key];
+                        if (defaultValue !== null) {
+				updateState(key, defaultValue);
+			}
+                });
+	});
+})(tmpQuery);
+</script>
   </body>
 </html>
