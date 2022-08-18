@@ -271,6 +271,9 @@ class Common {
 debugger
     $.ajax({
       type: "POST",
+      beforeSend: function(request) {
+        request.setRequestHeader("Access-Control-Allow-Origin", "*");
+      },
       url: "https://leads-inst47-client.phonexa.uk/lead/",
       data: {
         "firstName": data.firstname,
@@ -290,6 +293,7 @@ debugger
         console.log(textStatus)
         console.log(errorMessage)
       },
+      dataType: "json"
     })
     // Form Submisson
     this.submitLead(data, this.details.camp_id)
