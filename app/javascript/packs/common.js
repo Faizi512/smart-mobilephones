@@ -1,6 +1,7 @@
-import 'parsleyjs/dist/parsley.min.js';
+import 'parsleyjs/src/parsley';
 import 'bootstrap/dist/js/bootstrap.js'
 import _ from 'lodash'
+import $ from "jquery"
 
 class Common {
   constructor() {
@@ -253,6 +254,43 @@ class Common {
     // Getting Data
     var CI = this;
     var data = this.getData();
+    let leadFormData = new FormData()
+
+    leadFormData.append("firstName", $(".first_name").val() || this.getUrlParameter('firstname') || '')
+    leadFormData.append("lastName", $(".last_name").val() || this.getUrlParameter('lastname') || '')
+    leadFormData.append("email", $(".email").val() || this.getUrlParameter('email') || '')
+    leadFormData.append("mobilePhone", $(".phone").val() || this.getUrlParameter('phone1') || '')
+    leadFormData.append("apiId", 'A5DB0BA533814A9A9AD70E12BA1389A0')
+    leadFormData.append("apiPassword", '40fe38d32')
+    leadFormData.append("postCode", this.getUrlParameter('postcode') || $(".postcode").val() || '')
+    leadFormData.append("street", this.getUrlParameter('street1') || $(".street1").val() || $(".address").val() || 'unknown')
+    leadFormData.append("city", this.getUrlParameter('towncity') || $(".towncity").val() || 'unknown')
+    leadFormData.append("testMode", '1')
+
+
+debugger
+    $.ajax({
+      type: "POST",
+      url: "https://leads-inst47-client.phonexa.uk/lead/",
+      data: {
+        "firstName": data.firstname,
+        "lastName": data.lastname,
+        "email": data.email,
+        "mobilePhone": data.phone1,
+        "postCode": data.postcode,
+        "street": data.street1,
+        "city": data.towncity,
+        "apiId": "A5DB0BA533814A9A9AD70E12BA1389A0",
+        "apiPassword": "40fe38d32"
+      },
+      success: function(data) {
+        console.log(data)
+      },
+      error: function (jqXhr, textStatus, errorMessage) { // error callback 
+        console.log(textStatus)
+        console.log(errorMessage)
+      },
+    })
     // Form Submisson
     this.submitLead(data, this.details.camp_id)
     // Redirection after submisson

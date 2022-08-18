@@ -245,3 +245,988 @@ Your manifest contains:
     4: <div class="bg-black">
   
 app/views/pages/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:23:27 +0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 3c17b66f3440785aabf1
+Version: webpack 4.46.0
+Time: 12259ms
+Built at: 08/18/2022 10:23:41 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-fc6707c4a1608de78d4c.js   924 KiB    application  [emitted] [immutable]  application
+  js/application-fc6707c4a1608de78d4c.js.map   971 KiB    application  [emitted] [dev]        application
+           js/common-b0ad699f448f8a34a583.js  1.23 MiB         common  [emitted] [immutable]  common
+       js/common-b0ad699f448f8a34a583.js.map  1.37 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-b0376ece0378622c88f1.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-b0376ece0378622c88f1.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-d304922ce2772b8b4553.js  1.24 MiB           home  [emitted] [immutable]  home
+         js/home-d304922ce2772b8b4553.js.map  1.37 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-fc6707c4a1608de78d4c.js js/application-fc6707c4a1608de78d4c.js.map
+Entrypoint common = js/common-b0ad699f448f8a34a583.js js/common-b0ad699f448f8a34a583.js.map
+Entrypoint exit_delivery = js/exit_delivery-b0376ece0378622c88f1.js js/exit_delivery-b0376ece0378622c88f1.js.map
+Entrypoint home = js/home-d304922ce2772b8b4553.js js/home-d304922ce2772b8b4553.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 68 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layouts/_step-form.html.erb (Duration: 0.6ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 14522.9ms | Allocations: 169006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14533.6ms | Allocations: 181619)
+Completed 200 OK in 14545ms (Views: 14536.9ms | ActiveRecord: 0.0ms | Allocations: 185640)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:23:43 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:34:56 +0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: b0d239d6e2f0a0fa488d
+Version: webpack 4.46.0
+Time: 19040ms
+Built at: 08/18/2022 10:35:27 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-a0d9d296e4a26368a9ce.js   1.3 MiB    application  [emitted] [immutable]  application
+  js/application-a0d9d296e4a26368a9ce.js.map  1.33 MiB    application  [emitted] [dev]        application
+           js/common-f42f447654899ce9f4ca.js  1.95 MiB         common  [emitted] [immutable]  common
+       js/common-f42f447654899ce9f4ca.js.map  2.11 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-1c4cf6dcf6bd4627c1bf.js   893 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map   967 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-b6eff434d44c9b1226ad.js  2.36 MiB           home  [emitted] [immutable]  home
+         js/home-b6eff434d44c9b1226ad.js.map   2.5 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-a0d9d296e4a26368a9ce.js js/application-a0d9d296e4a26368a9ce.js.map
+Entrypoint common = js/common-f42f447654899ce9f4ca.js js/common-f42f447654899ce9f4ca.js.map
+Entrypoint exit_delivery = js/exit_delivery-1c4cf6dcf6bd4627c1bf.js js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map
+Entrypoint home = js/home-b6eff434d44c9b1226ad.js js/home-b6eff434d44c9b1226ad.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 283 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 12.8ms | Allocations: 130)
+  Rendered layouts/_step-form.html.erb (Duration: 6.6ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 33463.7ms | Allocations: 43593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33524.5ms | Allocations: 48435)
+Completed 200 OK in 33616ms (Views: 33560.7ms | ActiveRecord: 0.0ms | Allocations: 51431)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:35:33 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:39:08 +0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 856afb7dd4ffbea45bc1
+Version: webpack 4.46.0
+Time: 6156ms
+Built at: 08/18/2022 10:39:15 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-a0d9d296e4a26368a9ce.js   1.3 MiB    application  [emitted] [immutable]  application
+  js/application-a0d9d296e4a26368a9ce.js.map  1.33 MiB    application  [emitted] [dev]        application
+           js/common-0e01acadefdf221992dd.js  1.63 MiB         common  [emitted] [immutable]  common
+       js/common-0e01acadefdf221992dd.js.map  1.75 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-1c4cf6dcf6bd4627c1bf.js   893 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map   967 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-62e2893f66e50c24889c.js  1.64 MiB           home  [emitted] [immutable]  home
+         js/home-62e2893f66e50c24889c.js.map  1.75 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-a0d9d296e4a26368a9ce.js js/application-a0d9d296e4a26368a9ce.js.map
+Entrypoint common = js/common-0e01acadefdf221992dd.js js/common-0e01acadefdf221992dd.js.map
+Entrypoint exit_delivery = js/exit_delivery-1c4cf6dcf6bd4627c1bf.js js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map
+Entrypoint home = js/home-62e2893f66e50c24889c.js js/home-62e2893f66e50c24889c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 175 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 130)
+  Rendered layouts/_step-form.html.erb (Duration: 0.3ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7258.5ms | Allocations: 43524)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7263.4ms | Allocations: 48366)
+Completed 200 OK in 7271ms (Views: 7265.5ms | ActiveRecord: 0.0ms | Allocations: 51362)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:39:17 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:40:48 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 122)
+  Rendered layouts/_step-form.html.erb (Duration: 0.4ms | Allocations: 305)
+  Rendered pages/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 17015)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 21585)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 23100)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:40:48 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:42:34 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: d9a8e0ed71121aa379bc
+Version: webpack 4.46.0
+Time: 6991ms
+Built at: 08/18/2022 10:42:42 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-a0d9d296e4a26368a9ce.js   1.3 MiB    application  [emitted] [immutable]  application
+  js/application-a0d9d296e4a26368a9ce.js.map  1.33 MiB    application  [emitted] [dev]        application
+           js/common-bb9e01e6a43e12401fac.js  1.63 MiB         common  [emitted] [immutable]  common
+       js/common-bb9e01e6a43e12401fac.js.map  1.75 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-1c4cf6dcf6bd4627c1bf.js   893 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map   967 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-7157b0c8a9d914fc7548.js  1.64 MiB           home  [emitted] [immutable]  home
+         js/home-7157b0c8a9d914fc7548.js.map  1.75 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-a0d9d296e4a26368a9ce.js js/application-a0d9d296e4a26368a9ce.js.map
+Entrypoint common = js/common-bb9e01e6a43e12401fac.js js/common-bb9e01e6a43e12401fac.js.map
+Entrypoint exit_delivery = js/exit_delivery-1c4cf6dcf6bd4627c1bf.js js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map
+Entrypoint home = js/home-7157b0c8a9d914fc7548.js js/home-7157b0c8a9d914fc7548.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 175 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 8029.9ms | Allocations: 17096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8035.6ms | Allocations: 21334)
+Completed 200 OK in 8037ms (Views: 8036.0ms | ActiveRecord: 0.0ms | Allocations: 21964)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:42:43 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:45:00 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: ce605bf38614a9cb8817
+Version: webpack 4.46.0
+Time: 7258ms
+Built at: 08/18/2022 10:45:08 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-a0d9d296e4a26368a9ce.js   1.3 MiB    application  [emitted] [immutable]  application
+  js/application-a0d9d296e4a26368a9ce.js.map  1.33 MiB    application  [emitted] [dev]        application
+           js/common-f81f9fb566e33abdc392.js  1.69 MiB         common  [emitted] [immutable]  common
+       js/common-f81f9fb566e33abdc392.js.map   1.8 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-1c4cf6dcf6bd4627c1bf.js   893 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map   967 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-6022b24d0d7923b487aa.js   1.7 MiB           home  [emitted] [immutable]  home
+         js/home-6022b24d0d7923b487aa.js.map   1.8 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-a0d9d296e4a26368a9ce.js js/application-a0d9d296e4a26368a9ce.js.map
+Entrypoint common = js/common-f81f9fb566e33abdc392.js js/common-f81f9fb566e33abdc392.js.map
+Entrypoint exit_delivery = js/exit_delivery-1c4cf6dcf6bd4627c1bf.js js/exit_delivery-1c4cf6dcf6bd4627c1bf.js.map
+Entrypoint home = js/home-6022b24d0d7923b487aa.js js/home-6022b24d0d7923b487aa.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 191 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 8481.2ms | Allocations: 17104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8486.2ms | Allocations: 21294)
+Completed 200 OK in 8489ms (Views: 8487.3ms | Allocations: 21920)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:45:09 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:50:19 +0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 7f186dbb963d822041fd
+Version: webpack 4.46.0
+Time: 14178ms
+Built at: 08/18/2022 10:50:40 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-7c186d345bf9d19ffc6a.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-7c186d345bf9d19ffc6a.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-ca33b549fd78bae8291b.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-ca33b549fd78bae8291b.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-7c186d345bf9d19ffc6a.js js/common-7c186d345bf9d19ffc6a.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-ca33b549fd78bae8291b.js js/home-ca33b549fd78bae8291b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 15.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 11.1ms | Allocations: 127)
+  Rendered layouts/_step-form.html.erb (Duration: 6.3ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 25358.8ms | Allocations: 43580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25448.2ms | Allocations: 48428)
+Completed 200 OK in 25582ms (Views: 25495.8ms | ActiveRecord: 0.0ms | Allocations: 51428)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 22:50:58 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 22:51:31 +0500
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 22:51:31 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (58.9ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (1.5ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.3ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (1.5ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 581ms (ActiveRecord: 195.1ms | Allocations: 9683)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 8409ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 101001)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:09:25 +0500
+  [1m[35m (19.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_footer.html.erb (Duration: 7.6ms | Allocations: 127)
+  Rendered layouts/_step-form.html.erb (Duration: 6.5ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 2284.0ms | Allocations: 42193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2366.9ms | Allocations: 47041)
+Completed 200 OK in 2478ms (Views: 2414.7ms | ActiveRecord: 0.0ms | Allocations: 50037)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:09:31 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:10:22 +0500
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:10:22 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+  [1m[36mExitDelivery Load (28.0ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (2.3ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (2.5ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (2.4ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 101.6ms | Allocations: 9522)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 3229ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 96845)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:33:50 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: b1f429b57ed3115b04b8
+Version: webpack 4.46.0
+Time: 17156ms
+Built at: 08/18/2022 11:34:15 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-a60540eb0e71b56abbea.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-a60540eb0e71b56abbea.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-0a85c05f375b249ec663.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-0a85c05f375b249ec663.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-a60540eb0e71b56abbea.js js/common-a60540eb0e71b56abbea.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-0a85c05f375b249ec663.js js/home-0a85c05f375b249ec663.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.3 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 25336.7ms | Allocations: 17217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25362.7ms | Allocations: 21481)
+Completed 200 OK in 25365ms (Views: 25363.8ms | Allocations: 22126)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:34:21 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:38:37 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 184a84bd717be3bcd366
+Version: webpack 4.46.0
+Time: 7783ms
+Built at: 08/18/2022 11:38:46 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-026b5f3e144f38d15d49.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-026b5f3e144f38d15d49.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-209ea28ce6af1fade816.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-209ea28ce6af1fade816.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-026b5f3e144f38d15d49.js js/common-026b5f3e144f38d15d49.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-209ea28ce6af1fade816.js js/home-209ea28ce6af1fade816.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.4 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9559.0ms | Allocations: 17094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9566.0ms | Allocations: 21335)
+Completed 200 OK in 9570ms (Views: 9567.6ms | Allocations: 21964)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:38:48 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:41:13 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: df11d7a7716ed9d47a6c
+Version: webpack 4.46.0
+Time: 6303ms
+Built at: 08/18/2022 11:41:20 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-f61be30a04b1ac5b79b5.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-f61be30a04b1ac5b79b5.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-6c333f5831029a8b4c63.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-6c333f5831029a8b4c63.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-f61be30a04b1ac5b79b5.js js/common-f61be30a04b1ac5b79b5.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-6c333f5831029a8b4c63.js js/home-6c333f5831029a8b4c63.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.7 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7432.6ms | Allocations: 17091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7436.6ms | Allocations: 21329)
+Completed 200 OK in 7437ms (Views: 7437.0ms | Allocations: 21957)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:41:21 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:41:56 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:41:56 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (0.9ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (1.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.3ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (1.3ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 30.1ms | Allocations: 8502)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 2049ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 99981)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:42:50 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 28.6ms | Allocations: 15787)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 20026)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 20651)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:42:50 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:43:14 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:43:17 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (1.6ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (2.0ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (1.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 8.8ms | Allocations: 5065)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 15533ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 96536)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:44:40 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 47fdcbc061511c28d541
+Version: webpack 4.46.0
+Time: 7787ms
+Built at: 08/18/2022 11:44:49 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-0efe889a7f222a2a3905.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-0efe889a7f222a2a3905.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-239a1422aef0afb9a0f4.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-239a1422aef0afb9a0f4.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-0efe889a7f222a2a3905.js js/common-0efe889a7f222a2a3905.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-239a1422aef0afb9a0f4.js js/home-239a1422aef0afb9a0f4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.7 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 9046.4ms | Allocations: 17098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9136.8ms | Allocations: 21336)
+Completed 200 OK in 9139ms (Views: 9137.6ms | ActiveRecord: 0.0ms | Allocations: 21961)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:44:52 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:45:47 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Completed 200 OK in 2052ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2067)
+
+
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:45:50 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (2.6ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (3.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.4ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (5.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 14.6ms | Allocations: 5048)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:50:42 +0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_footer.html.erb (Duration: 9.8ms | Allocations: 130)
+  Rendered layouts/_step-form.html.erb (Duration: 0.9ms | Allocations: 309)
+  Rendered pages/index.html.erb within layouts/application (Duration: 525.8ms | Allocations: 42107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 600.4ms | Allocations: 46955)
+Completed 200 OK in 707ms (Views: 610.0ms | ActiveRecord: 0.0ms | Allocations: 49951)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:50:44 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:51:22 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Completed 200 OK in 2144ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2163)
+
+
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:51:25 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (1.7ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (0.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (0.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (0.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 9.7ms | Allocations: 9164)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Started GET "/" for 127.0.0.1 at 2022-08-18 23:52:21 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 340f242108a8aaa9e28d
+Version: webpack 4.46.0
+Time: 8237ms
+Built at: 08/18/2022 11:52:31 PM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-226214d783f49239ff1f.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-226214d783f49239ff1f.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-7fec390f8d0f04140d91.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-7fec390f8d0f04140d91.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-226214d783f49239ff1f.js js/common-226214d783f49239ff1f.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-7fec390f8d0f04140d91.js js/home-7fec390f8d0f04140d91.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.8 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 10127.2ms | Allocations: 17175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10134.2ms | Allocations: 21440)
+Completed 200 OK in 10137ms (Views: 10135.5ms | ActiveRecord: 0.0ms | Allocations: 22085)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-18 23:52:32 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-18 23:52:52 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-18 23:52:54 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (1.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (1.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.6ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (1.2ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 6.3ms | Allocations: 5056)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 6997ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 96766)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-19 00:37:47 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 7ca3136630a00283355f
+Version: webpack 4.46.0
+Time: 7313ms
+Built at: 08/19/2022 12:37:56 AM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-f7190c6e47e76f6336c7.js  1.29 MiB         common  [emitted] [immutable]  common
+       js/common-f7190c6e47e76f6336c7.js.map  1.41 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-674d6dc8da220d0801f5.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-674d6dc8da220d0801f5.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-f7190c6e47e76f6336c7.js js/common-f7190c6e47e76f6336c7.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-674d6dc8da220d0801f5.js js/home-674d6dc8da220d0801f5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 16.8 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 8587.3ms | Allocations: 17097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8596.3ms | Allocations: 21337)
+Completed 200 OK in 8598ms (Views: 8597.1ms | Allocations: 21963)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-19 00:37:57 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-19 00:38:20 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Completed 200 OK in 2468ms (Views: 0.1ms | Allocations: 2062)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-19 00:44:41 +0500
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hammad/Projects/smartphonedeals-staging/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Hash: 708026f26a19513cb922
+Version: webpack 4.46.0
+Time: 6418ms
+Built at: 08/19/2022 12:44:48 AM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-ba9c07d554acc8840aff.js  1.21 MiB    application  [emitted] [immutable]  application
+  js/application-ba9c07d554acc8840aff.js.map  1.31 MiB    application  [emitted] [dev]        application
+           js/common-a83ba013cce7ac1b0e30.js   1.3 MiB         common  [emitted] [immutable]  common
+       js/common-a83ba013cce7ac1b0e30.js.map  1.42 MiB         common  [emitted] [dev]        common
+    js/exit_delivery-3ef37b8114a53c03d508.js   483 KiB  exit_delivery  [emitted] [immutable]  exit_delivery
+js/exit_delivery-3ef37b8114a53c03d508.js.map   574 KiB  exit_delivery  [emitted] [dev]        exit_delivery
+             js/home-75c62d576f5359c96e24.js   1.3 MiB           home  [emitted] [immutable]  home
+         js/home-75c62d576f5359c96e24.js.map  1.42 MiB           home  [emitted] [dev]        home
+                               manifest.json  1.28 KiB                 [emitted]              
+Entrypoint application = js/application-ba9c07d554acc8840aff.js js/application-ba9c07d554acc8840aff.js.map
+Entrypoint common = js/common-a83ba013cce7ac1b0e30.js js/common-a83ba013cce7ac1b0e30.js.map
+Entrypoint exit_delivery = js/exit_delivery-3ef37b8114a53c03d508.js js/exit_delivery-3ef37b8114a53c03d508.js.map
+Entrypoint home = js/home-75c62d576f5359c96e24.js js/home-75c62d576f5359c96e24.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 523 bytes {application} [built]
+[./app/javascript/packs/common.js] 17.1 KiB {common} {home} [built]
+[./app/javascript/packs/exit_delivery.js] 456 bytes {exit_delivery} [built]
+[./app/javascript/packs/home.js] 5.75 KiB {home} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/src/application.scss 787 KiB {application} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {common} {home} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} {common} {exit_delivery} {home} [built]
+    + 84 hidden modules
+
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layouts/_step-form.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered pages/index.html.erb within layouts/application (Duration: 7539.6ms | Allocations: 17092)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7544.8ms | Allocations: 21331)
+Completed 200 OK in 7547ms (Views: 7545.5ms | Allocations: 21958)
+
+
+Started GET "/%E2%80%9Chttps://www.googletagmanager.com/gtag/js?id=AW-10956024809%E2%80%9D" for 127.0.0.1 at 2022-08-19 00:44:50 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/%E2%80%9Chttps:/www.googletagmanager.com/gtag/js"):
+  
+Started GET "/lead_search?phone=3069807887" for 127.0.0.1 at 2022-08-19 00:46:21 +0500
+Processing by LeadController#lead_search as JSON
+  Parameters: {"phone"=>"3069807887"}
+Started GET "/api/v1/exit_deliveries?source=&device=undefined" for 127.0.0.1 at 2022-08-19 00:46:21 +0500
+Processing by Api::V1::RedirectController#exit_deliveries as JSON
+  Parameters: {"source"=>"", "device"=>"undefined"}
+  [1m[36mExitDelivery Load (2.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:37:in `map'
+  [1m[36mExitDelivery Load (1.2ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."functional" = $5 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "unsold"], ["is_default", false], ["operational", "active"], ["functional", "active"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:39:in `map'
+  [1m[36mExitDelivery Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 LIMIT $8[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:51:in `get_url'
+  [1m[36mExitDelivery Load (1.8ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."is_mobile" = $1 AND "exit_deliveries"."status" = $2 AND "exit_deliveries"."is_default" = $3 AND "exit_deliveries"."operational" = $4 AND "exit_deliveries"."is_mobile" = $5 AND "exit_deliveries"."functional" = $6 AND "exit_deliveries"."source" = $7 ORDER BY "exit_deliveries"."priority" ASC[0m  [["is_mobile", false], ["status", "sold"], ["is_default", false], ["operational", "active"], ["is_mobile", false], ["functional", "active"], ["source", "{}"]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:52:in `get_url'
+  [1m[36mExitDelivery Load (1.1ms)[0m  [1m[34mSELECT "exit_deliveries".* FROM "exit_deliveries" WHERE "exit_deliveries"."status" = $1 AND "exit_deliveries"."is_default" = $2 LIMIT $3[0m  [["status", "sold"], ["is_default", true], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 23.4ms | Allocations: 8495)
+
+
+  
+NoMethodError (undefined method `url' for nil:NilClass):
+  
+app/controllers/api/v1/redirect_controller.rb:59:in `get_url'
+app/controllers/api/v1/redirect_controller.rb:45:in `exit_deliveries'
+Completed 200 OK in 1972ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 99958)
+
+
