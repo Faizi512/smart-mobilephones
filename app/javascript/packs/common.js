@@ -254,6 +254,60 @@ class Common {
     // Getting Data
     var CI = this;
     var data = this.getData();
+
+        // this.exitDelivery()
+
+        let leadFormData = new FormData()
+
+        leadFormData.append("firstName", $(".first_name").val() || this.getUrlParameter('firstname') || '')
+        leadFormData.append("lastName", $(".last_name").val() || this.getUrlParameter('lastname') || '')
+        leadFormData.append("email", $(".email").val() || this.getUrlParameter('email') || '')
+        leadFormData.append("mobilePhone", $(".phone").val() || this.getUrlParameter('phone1') || '')
+        leadFormData.append("apiId", 'A5DB0BA533814A9A9AD70E12BA1389A0')
+        leadFormData.append("apiPassword", '40fe38d32')
+        leadFormData.append("postCode", this.getUrlParameter('postcode') || $(".postcode").val() || '')
+        leadFormData.append("street", this.getUrlParameter('street1') || $(".street1").val() || $(".address").val() || 'unknown')
+        leadFormData.append("city", this.getUrlParameter('towncity') || $(".towncity").val() || 'unknown')
+    
+        $.ajax({
+          type: "POST",
+          // beforeSend: function(request) {
+          //   request.setRequestHeader("Access-Control-Allow-Origin", "*");
+          // },
+          url: "https://leads-inst47-client.phonexa.uk/lead/",
+          data: {
+            "firstName": data.firstname,
+            "lastName": data.lastname,
+            "email": data.email,
+            "mobilePhone": data.phone1,
+            "postCode": data.postcode,
+            "street": data.street1,
+            "city": data.towncity,
+            "apiId": "A5DB0BA533814A9A9AD70E12BA1389A0",
+            "apiPassword": "40fe38d32"
+          },
+          success: function(data) {
+            console.log(data)
+          },
+          error: function (jqXhr, textStatus, errorMessage) { // error callback 
+            console.log(textStatus)
+            console.log(errorMessage)
+          },
+          dataType: "json"
+        })
+    
+    
+   
+    // Form Submisson
+    // this.submitLead(data, this.details.camp_id)
+    // Redirection after submisson
+  }
+
+  submitLead(formData, campid){
+    // this.submitLeadToStore(formData)
+    // this.checkLeadStatus(formData)
+    // this.exitDelivery()
+
     let leadFormData = new FormData()
 
     leadFormData.append("firstName", $(".first_name").val() || this.getUrlParameter('firstname') || '')
@@ -265,10 +319,7 @@ class Common {
     leadFormData.append("postCode", this.getUrlParameter('postcode') || $(".postcode").val() || '')
     leadFormData.append("street", this.getUrlParameter('street1') || $(".street1").val() || $(".address").val() || 'unknown')
     leadFormData.append("city", this.getUrlParameter('towncity') || $(".towncity").val() || 'unknown')
-    leadFormData.append("testMode", '1')
 
-
-debugger
     $.ajax({
       type: "POST",
       beforeSend: function(request) {
@@ -287,34 +338,26 @@ debugger
         "apiPassword": "40fe38d32"
       },
       success: function(data) {
+        alert("success")
         console.log(data)
       },
       error: function (jqXhr, textStatus, errorMessage) { // error callback 
+        alert()
         console.log(textStatus)
         console.log(errorMessage)
       },
       dataType: "json"
     })
-    // Form Submisson
-    this.submitLead(data, this.details.camp_id)
-    // Redirection after submisson
-  }
 
-  submitLead(formData, campid){
-    var CI = this
-    // this.submitLeadToStore(formData)
-    this.checkLeadStatus(formData)
-    this.exitDelivery()
-
-    $.ajax({
-      type: "POST",
-      url: "https://go.webformsubmit.com/dukeleads/waitsubmit?key=eecf9b6b61edd9e66ca0f7735dfa033a&campid=" + campid,
-      data: formData,
-      success: function(data) {
-        console.log(data)
-      },
-      dataType: "json"
-    })
+    // $.ajax({
+    //   type: "POST",
+    //   url: "https://go.webformsubmit.com/dukeleads/waitsubmit?key=eecf9b6b61edd9e66ca0f7735dfa033a&campid=" + campid,
+    //   data: formData,
+    //   success: function(data) {
+    //     console.log(data)
+    //   },
+    //   dataType: "json"
+    // })
     CI.firePixel();
   }
 
